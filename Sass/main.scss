@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+// Styling for the header
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px 0;
+  
+  h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+}
+
+// Styling for the main content
+main {
+  padding: 20px;
+
+  .content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .button {
+    @include button-style($secondary-color, white);
+  }
+}
+ 
